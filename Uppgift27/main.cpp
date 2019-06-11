@@ -4,43 +4,48 @@ using namespace std;
 
 int main(int argc, char** argv) {
 	
-	int op, tal1, tal2;
+	int  tal1, tal2;
 
-
+    string op;
 	
 	int valfri,resultat;
 	cout << "Skriv in ett tal i miniräknaren";
 	cin >> tal1;
+	cout << "ett till " << endl;
 	cin >> tal2;
 		cout << "Skriv in ett räknesätt";
 
 
 
 		cout << endl;
-		cout << " 1 = + ";
+		cout << " Addition = + ";
 		cout << endl;
-		cout << " 2 = - ";
+		cout << " Subtraktion = - ";
 		cout << endl;
-		cout << " 3 = * ";
+		cout << " Multiplikation = * ";
 		cout << endl;
-		cout << " 4 = / ";
+		cout << " Division = / ";
 		
 	cin >> op;
 	
 	
-	if(valfri ==1) {
+	if(op == "Addition") {
 		resultat = tal1 + tal2;
 	}
-	else if(valfri ==2) {
+	else if(op == "Subtraktion") {
 				resultat = tal1 - tal2;
 
 	}
-		else if(valfri ==3) {
+		else if(op =="Multiplikation") {
 				resultat = tal1 * tal2;
 
-	}	else if(valfri ==4) {
+	}	else if(op =="Division") {
 				resultat = tal1 / tal2;
 
+	}
+	else {
+		cout << "Du måste skriva Addition, Subraktion, Multiplikation, Division!";
+		
 	}
 	cout << resultat;
 
